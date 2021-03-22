@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Com.Airbnb.Xamarin.Forms.Lottie" Version="4.0.8" />
+    <PackageReference Include="DryIoc.dll" Version="4.7.4" />
+    <PackageReference Include="ReactiveUI.XamForms" Version="13.2.2" />
+    <PackageReference Include="Serilog.Sinks.Debug" Version="2.0.0" />
+    <PackageReference Include="Sharpnado.Shadows" Version="1.2.0" />
+    <PackageReference Include="Xamarin.CommunityToolkit" Version="1.0.3" />
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />  
+    <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CoolThings.Business\CoolThings.Business.csproj" />
+    <ProjectReference Include="..\CoolThings.Resources\CoolThings.Resources.csproj" />
+    <ProjectReference Include="..\PharmacistEvents\PharmacistEvents.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="cart.json" />
+  </ItemGroup>
+  
+</Project>

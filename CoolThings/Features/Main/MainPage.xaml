@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<foundation:BaseView
+    x:TypeArguments="main:MainViewModel"
+    x:DataType="main:MainViewModel"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:main="clr-namespace:CoolThings.Business.Features.Main;assembly=CoolThings.Business"
+    xmlns:foundation="clr-namespace:CoolThings.Foundation;assembly=CoolThings"
+    xmlns:handyTabs="clr-namespace:CoolThings.Features.Main.HandyTabs;assembly=CoolThings"
+    x:Class="CoolThings.Features.Main.MainPage"
+    BackgroundColor="#F5F6F8">
+
+    <ContentPage.Content>
+        <Grid>
+
+            <handyTabs:HandyMenu>
+                <handyTabs:HandyMenu.Items>
+
+                    <handyTabs:HandyButton
+                        Text="Store"
+                        SelectedColor="Firebrick"
+                        IconPathData="M7.28,3A2.28,2.28,0,0,0,5,5.28v7.981H27.8V5.28A2.28,2.28,0,0,0,25.524,3Zm1.14,3.421a1.141,1.141,0,0,1,1.14,1.14v2.28a1.14,1.14,0,0,1-2.28,0V7.561A1.141,1.141,0,0,1,8.421,6.421ZM5,15.542V28.085a2.28,2.28,0,0,0,2.28,2.28,1.14,1.14,0,1,0,2.28,0H23.243a1.14,1.14,0,1,0,2.28,0,2.28,2.28,0,0,0,2.28-2.28V15.542Zm3.421,2.28a1.141,1.141,0,0,1,1.14,1.14v4.561a1.14,1.14,0,0,1-2.28,0V18.963A1.141,1.141,0,0,1,8.421,17.823Z" />
+
+                    <handyTabs:HandyButton
+                        Text="Buy"
+                        SelectedColor="RoyalBlue"
+                        IconPathData="M34.42 18L25.66 4.89c-.38-.58-1.02-.85-1.66-.85-.64 0-1.28.28-1.66.85L13.58 18H4c-1.1 0-2 .9-2 2 0 .19.03.37.07.54l5.07 18.54C7.61 40.76 9.16 42 11 42h26c1.84 0 3.39-1.24 3.85-2.93l5.07-18.54c.05-.16.08-.34.08-.53 0-1.1-.9-2-2-2h-9.58zM18 18l6-8.8 6 8.8H18zm6 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z" />
+
+                    <handyTabs:HandyButton
+                        Text="Expenses"
+                        SelectedColor="DarkOrange"
+                        IconPathData="M26.609,4a2.254,2.254,0,0,0-2.131,3.009l-4.237,4.943a2.235,2.235,0,0,0-1.415.194L15.3,9.8q.006-.072.007-.144a2.26,2.26,0,0,0-4.515-.137L7.5,11.158A2.26,2.26,0,1,0,8.515,13.18L11.8,11.538a2.25,2.25,0,0,0,2.243.141l3.528,2.351q-.006.072-.007.144a2.261,2.261,0,1,0,4.391-.748l4.237-4.943A2.26,2.26,0,1,0,26.609,4ZM13.043,17.565a2.254,2.254,0,0,0-2.131,3.009L6.676,25.518a2.271,2.271,0,1,0,1.716,1.473l4.237-4.943a2.181,2.181,0,0,0,1-.04l4.016,4.016a2.261,2.261,0,1,0,4.444.585q0-.072-.007-.144l3.528-2.351a2.26,2.26,0,1,0-1.261-2.027q0,.072.007.144l-3.528,2.351a2.226,2.226,0,0,0-1.583-.155l-4.016-4.016a2.26,2.26,0,0,0-2.184-2.846Z" />
+
+                    <handyTabs:HandyButton
+                        Text="Cook"
+                        SelectedColor="ForestGreen"
+                        IconPathData="M6.51,3.255A1.084,1.084,0,0,0,5.425,4.34v6.51c0,5.054,4.113,4.339,3.876,7.584s-.621,6.521-.621,8.69a2.17,2.17,0,0,0,4.34,0q0-.076-.006-.153C13,24.8,12.632,21.611,12.4,18.434c-.238-3.245,3.876-2.53,3.876-7.584V4.34a1.085,1.085,0,1,0-2.17,0V9.765a1.085,1.085,0,0,1-2.17,0V4.34a1.085,1.085,0,1,0-2.17,0V9.765a1.085,1.085,0,0,1-2.17,0V4.34A1.084,1.084,0,0,0,6.51,3.255Zm15.19,0A1.085,1.085,0,0,0,20.615,4.34V27.125a2.17,2.17,0,1,0,4.325-.233,42.661,42.661,0,0,0-.848-5.442c-.417-2.223-.326-3,.862-3a2.176,2.176,0,0,0,2.17-2.17V8.68a5.422,5.422,0,0,0-5.317-5.419Q21.754,3.255,21.7,3.255Z" />
+
+                    <handyTabs:HandyButton
+                        Text="More"
+                        IconPathData="M3,10a3,3,0,1,0,3,3A3.005,3.005,0,0,0,3,10ZM13.02,10a3,3,0,1,0,3,3A3.005,3.005,0,0,0,13.02,10Zm10.015,0a3,3,0,1,0,3,3A3.005,3.005,0,0,0,23.035,10Z" />
+                    
+                </handyTabs:HandyMenu.Items>
+            </handyTabs:HandyMenu>
+        </Grid>
+    </ContentPage.Content>
+</foundation:BaseView>

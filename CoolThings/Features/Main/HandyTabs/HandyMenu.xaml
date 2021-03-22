@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<foundation:ContentViewActivationHook
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:shades="http://sharpnado.com"
+    xmlns:foundation="clr-namespace:CoolThings.Foundation;assembly=CoolThings"
+    x:Class="CoolThings.Features.Main.HandyTabs.HandyMenu"
+    VerticalOptions="End">
+
+    <Grid>
+        <AbsoluteLayout
+            x:Name="BarShape"
+            LayoutFlags="SizeProportional"
+            IsEnabled="False"
+            TranslationX="0"
+            Margin="-1,0,-1,-18">
+            <shades:Shadows>
+                <shades:Shadows.Shades>
+                    <shades:SingleShade
+                        Offset="0,-8"
+                        BlurRadius="20"
+                        Color="Black"
+                        Opacity="0.10" />
+                </shades:Shadows.Shades>
+                <Path
+                    x:Name="ThePath"
+                    Fill="White"
+                    HeightRequest="88"
+                    Aspect="Fill"
+                    Data="M-176.082,292.46s420.667.667,441.667,0c27-3.667,14.667,38.667,58.333,39.25,40.333-1.25,37.667-39.917,56.667-39.25,24.583,0,443.333.024,443.333.024V378.46h-1000Z" />
+            </shades:Shadows>
+        </AbsoluteLayout>
+
+        <Grid
+            x:Name="ButtonsGrid"
+            ColumnSpacing="0"
+            VerticalOptions="End"
+            HorizontalOptions="FillAndExpand"
+            Padding="10,0,10,6" />
+    </Grid>
+
+</foundation:ContentViewActivationHook>

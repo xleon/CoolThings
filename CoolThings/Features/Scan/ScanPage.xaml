@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<foundation:BaseView
+    x:TypeArguments="scan:ScanViewModel"
+    x:DataType="scan:ScanViewModel"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:scan="clr-namespace:CoolThings.Business.Features.Scan;assembly=CoolThings.Business"
+    xmlns:foundation="clr-namespace:CoolThings.Foundation;assembly=CoolThings"
+    x:Class="CoolThings.Features.Scan.ScanPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="The scan page"
+                   VerticalOptions="CenterAndExpand"
+                   HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ContentPage.Content>
+</foundation:BaseView>

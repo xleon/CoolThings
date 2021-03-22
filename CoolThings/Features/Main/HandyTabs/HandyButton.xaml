@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<foundation:ContentViewActivationHook
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:shades="http://sharpnado.com"
+    xmlns:foundation="clr-namespace:CoolThings.Foundation;assembly=CoolThings"
+    x:Class="CoolThings.Features.Main.HandyTabs.HandyButton"
+    x:Name="This">
+
+    <ContentView.GestureRecognizers>
+        <TapGestureRecognizer x:Name="Tap" x:FieldModifier="public" />
+    </ContentView.GestureRecognizers>
+
+    <Grid>
+        <Grid
+            x:Name="FloatingEllipse"
+            HorizontalOptions="Center"
+            Margin="0,0,0,0" 
+            IsClippedToBounds="False">
+
+            <shades:Shadows 
+                x:Name="FloatingEllipseShadows" 
+                CornerRadius="28">
+                <Ellipse
+                    Aspect="Uniform"
+                    Fill="White"
+                    HorizontalOptions="Start"
+                    WidthRequest="56"
+                    HeightRequest="56" />
+            </shades:Shadows>
+
+            <Path
+                x:Name="IconPath"
+                Aspect="Uniform"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                WidthRequest="25"
+                HeightRequest="25"
+                Margin="0,0,0,5"
+                Fill="#B2B2B2"
+                Data="{Binding Source={x:Reference This}, Path=IconPathData}" />
+
+            <Ellipse
+                x:Name="OutterCircleEffect"
+                Aspect="Uniform"
+                Stroke="White"
+                StrokeThickness="3"
+                HorizontalOptions="Center"
+                WidthRequest="45"
+                HeightRequest="45"
+                Opacity="0" />
+
+            <Ellipse
+                x:Name="InnerCircleEffect"
+                Aspect="Uniform"
+                Stroke="White"
+                StrokeThickness="1"
+                HorizontalOptions="Center"
+                WidthRequest="10"
+                HeightRequest="10"
+                Opacity="0" />
+
+            <Label
+                x:Name="Label"
+                Text="{Binding Source={x:Reference This}, Path=Text}"
+                TextColor="{Binding Source={x:Reference This}, Path=UnselectedColor}"
+                FontSize="12"
+                MaxLines="1"
+                HorizontalOptions="Fill"
+                HorizontalTextAlignment="Center"
+                VerticalOptions="End"
+                Margin="0,48,0,2" />
+        </Grid>
+
+    </Grid>
+</foundation:ContentViewActivationHook>
